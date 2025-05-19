@@ -2,10 +2,24 @@
 
 Sounded is a lightweight, theme-aware sound system for React and Next.js apps. It provides subtle UI feedback using hover and click sounds, with full support for dark/light themes, mute toggles, and accessibility-friendly enhancements.
 
-- 🔊 Click and hover sounds via a single `<Sounded />` wrapper
-- 🎨 Theme-based sound packs for dark/light modes
-- 🔇 Global mute toggle with persistence
-- ⚡️ Fast, typed, and Tailwind-compatible
+## 🧩 What It Does
+
+- Provides global configuration for UI sound effects
+- Cleanly integrates with React components using a simple `<Sounded>` wrapper
+- Enables dark/light theme–specific sound sets
+- Global mute toggle with persistence
+- One-shot AudioContext support
+- Offers a persistent mute toggle with `localStorage` support
+- Works with any interactive component (`button`, `div`, `a`, etc.)
+- Fast, typed, and Tailwind-compatible
+
+### ⚠️ Notes
+
+- Works seamlessly in Next.js App Router
+- Minimal runtime overhead
+- Requires client-only usage (`'use client'`)
+- Not SSR-compatible (by design)
+- Must wrap interactive elements manually (or abstract with design system)
 
 ---
 
@@ -26,16 +40,6 @@ Then import components and hooks directly from the package:
 ```tsx
 import { SoundedProvider, useSoundedContext, useSound, Sounded } from 'plebs/sounded';
 ```
-
----
-
-## 🧩 What It Does
-
-- Provides global configuration for UI sound effects
-- Enables dark/light theme–specific sound sets
-- Offers a persistent mute toggle with `localStorage` support
-- Cleanly integrates with React components using a simple `<Sounded>` wrapper
-- Works with any interactive component (`button`, `div`, `a`, etc.)
 
 ---
 
@@ -139,16 +143,6 @@ const play = useSound(['/sounds/ping.mp3'], {
 
 ---
 
-## 🔧 Features
-
-- ✅ Theme-based sound routing
-- ✅ Global mute toggle (with persistence)
-- ✅ Shuffle and fallback sound variants
-- ✅ One-shot AudioContext support
-- ✅ Fully typed and client-safe
-
----
-
 ## 🛠 How To Add Sounds
 
 1. Place your sound files in `/public/sounds/`
@@ -166,24 +160,6 @@ const soundMap = {
   },
 };
 ```
-
----
-
-## ⚖️ Pros & Cons
-
-### ✅ Pros
-
-- Easy to integrate and use
-- Centralized sound logic for consistent UX
-- Fully customizable and theme-aware
-- Minimal runtime overhead
-- Works seamlessly in Next.js App Router
-
-### ⚠️ Cons
-
-- Requires client-only usage (`'use client'`)
-- Not SSR-compatible (by design)
-- Must wrap interactive elements manually (or abstract with design system)
 
 ---
 
