@@ -1,4 +1,13 @@
-# 🎧 Sounded Context – Global UI Sound System for React
+# 🎧 Sounded – Global UI Sound System for React
+
+Sounded is a lightweight, theme-aware sound system for React and Next.js apps. It provides subtle UI feedback using hover and click sounds, with full support for dark/light themes, mute toggles, and accessibility-friendly enhancements.
+
+- 🔊 Click and hover sounds via a single `<Sounded />` wrapper
+- 🎨 Theme-based sound packs for dark/light modes
+- 🔇 Global mute toggle with persistence
+- ⚡️ Fast, typed, and Tailwind-compatible
+
+---
 
 ## 📦 Installation
 
