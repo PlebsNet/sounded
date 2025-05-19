@@ -1,6 +1,6 @@
 {
   "name": "@plebs/sounded",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Theme-aware, globally configurable UI sound system for React and Next.js apps.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
