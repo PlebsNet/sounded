@@ -1,0 +1,34 @@
+# Build output
+dist/
+*.tsbuildinfo
+
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Mac / OS artifacts
+.DS_Store
+
+# Editor configs
+.vscode/
+.idea/
+
+# Local env
+.env
+.env.local
+.env.*.local
+
+# GitHub packaging
+*.tgz
+
+# VS Code workspaces
+*.code-workspace
+
+# Test snapshots and coverage (if testing is added)
+coverage/
+*.snap
